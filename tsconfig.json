@@ -1,5 +1,4 @@
 {
-  "extends": "@tsconfig/node20/tsconfig.json",
   "compilerOptions": {
     "lib": ["ES2022"],
     "outDir": "dist",
@@ -14,6 +13,12 @@
     "declaration": true,
     "sourceMap": true,
     "resolveJsonModule": true,
+    "module": "node16",
+    "target": "es2022",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "moduleResolution": "node16"
   },
   "include": ["src", "test"],
   "exclude": ["dist", "bundle", "node_modules"],
